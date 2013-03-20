@@ -1,0 +1,124 @@
+#player {
+  position: fixed;
+  z-index: 2;
+  bottom: 0px;
+  left: 200px;
+  right: 0px;
+  height: 60px;
+  margin-bottom: 0px;
+}
+#player .navbar-inner {
+  height: 60px;
+  min-height: 60px;
+  line-height: 60px;
+  background: #C7C7C7;
+  background: -moz-linear-gradient(top, rgba(199, 199, 199, 1) 0%, rgba(189, 189, 189, 1) 50%, rgba(184, 184, 184, 1) 51%, rgba(219, 219, 219, 1) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(199, 199, 199, 1)), color-stop(50%,rgba(189, 189, 189, 1)), color-stop(51%,rgba(184, 184, 184, 1)), color-stop(100%,rgba(219, 219, 219, 1)));
+  background: -webkit-linear-gradient(top, rgba(199, 199, 199, 1) 0%,rgba(189, 189, 189, 1) 50%,rgba(184, 184, 184, 1) 51%,rgba(219, 219, 219, 1) 100%);
+  background: -o-linear-gradient(top, rgba(199, 199, 199, 1) 0%,rgba(189, 189, 189, 1) 50%,rgba(184, 184, 184, 1) 51%,rgba(219, 219, 219, 1) 100%);
+  background: -ms-linear-gradient(top, rgba(199, 199, 199, 1) 0%,rgba(189, 189, 189, 1) 50%,rgba(184, 184, 184, 1) 51%,rgba(219, 219, 219, 1) 100%);
+  background: linear-gradient(top, rgba(199, 199, 199, 1) 0%,rgba(189, 189, 189, 1) 50%,rgba(184, 184, 184, 1) 51%,rgba(219, 219, 219, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c7c7c7', endColorstr='#dbdbdb',GradientType=0 );
+  border-radius: 0;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, .5) inset;
+  padding: 0 10px;
+}
+#player #player-controls, #player #btn-volume {
+  margin-top: 0;
+}
+#player #btn-pause {
+  display: none;
+}
+#player #artist_info {
+  margin-top: 5px;
+  margin-right: 10px;
+  height: 48px;
+  line-height: 48px;
+  position: absolute;
+  left: 330px;
+  right: 175px;
+  border-radius: 5px;
+  background: #C7C7C7;
+  background: -moz-linear-gradient(top, rgba(199, 199, 199, 1) 0%, rgba(189, 189, 189, 1) 50%, rgba(184, 184, 184, 1) 51%, rgba(219, 219, 219, 1) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(199, 199, 199, 1)), color-stop(50%,rgba(189, 189, 189, 1)), color-stop(51%,rgba(184, 184, 184, 1)), color-stop(100%,rgba(219, 219, 219, 1)));
+  background: -webkit-linear-gradient(top, rgba(199, 199, 199, 1) 0%,rgba(189, 189, 189, 1) 50%,rgba(184, 184, 184, 1) 51%,rgba(219, 219, 219, 1) 100%);
+  background: -o-linear-gradient(top, rgba(199, 199, 199, 1) 0%,rgba(189, 189, 189, 1) 50%,rgba(184, 184, 184, 1) 51%,rgba(219, 219, 219, 1) 100%);
+  background: -ms-linear-gradient(top, rgba(199, 199, 199, 1) 0%,rgba(189, 189, 189, 1) 50%,rgba(184, 184, 184, 1) 51%,rgba(219, 219, 219, 1) 100%);
+  background: linear-gradient(top, rgba(199, 199, 199, 1) 0%,rgba(189, 189, 189, 1) 50%,rgba(184, 184, 184, 1) 51%,rgba(219, 219, 219, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c7c7c7', endColorstr='#dbdbdb',GradientType=0 );
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, .4) inset, 0px 0px 0px 1px rgba(255, 255, 255, .3);
+  cursor: pointer !important;
+  border-radius: 3px;
+  overflow: hidden;
+  border: 1px #777 solid;
+}
+#player #artist_info span {
+  width: 100%;
+}
+#player span {
+  margin: 0 5px;
+  padding: 0;
+}
+#player #time > *, #player #volume > * {
+  display: inline-block;
+}
+#player #timeslide {
+  width: 90px;
+  margin: 0 5px;
+  height: 10px;
+}
+#player #volume {
+  position: relative;
+  margin-right: 0px;
+  left: 0px;
+  height: 10px;
+}
+#player #volumeslide {
+  width: 100px;
+  margin: 0 5px;
+  height: 10px;
+}
+#player .ui-slider-handle {
+  border-radius: 50%;
+  outline: none;
+  width: 16px;
+  height: 16px;
+  top: -4px;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, .5);
+  /* Credit: http://lab.simurai.com/metal/ */
+  background-image: -webkit-radial-gradient( 50% 0%, 8% 50%, rgba(255, 255, 255, .5) 0%, rgba(255, 255, 255, 0) 100%), -webkit-radial-gradient( 50% 100%, 12% 50%, rgba(255, 255, 255, .6) 0%, rgba(255, 255, 255, 0) 100%), -webkit-radial-gradient( 0% 50%, 50% 7%, rgba(255, 255, 255, .5) 0%, rgba(255, 255, 255, 0) 100%), -webkit-radial-gradient( 100% 50%, 50% 5%, rgba(255, 255, 255, .5) 0%, rgba(255, 255, 255, 0) 100%), -webkit-repeating-radial-gradient( 50% 50%, 100% 100%, transparent 0%, transparent 3%, rgba(0, 0, 0, .1) 3.5%), -webkit-repeating-radial-gradient( 50% 50%, 100% 100%, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 6%, rgba(255, 255, 255, .1) 7.5%), -webkit-repeating-radial-gradient( 50% 50%, 100% 100%, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 1.2%, rgba(255, 255, 255, .2) 2.2%), -webkit-radial-gradient( 50% 50%, 200% 50%, rgba(230, 230, 230, 1) 5%, rgba(217, 217, 217, 1) 30%, rgba(153, 153, 153, 1) 100%);
+}
+#player .ui-slider-range {
+  height: 8px;
+  top: 1px;
+  left: 1px;
+  border-radius: 3px;
+  background-color: #0E90D2;
+  background-image: -moz-linear-gradient(top, #149BDF, #0480BE);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#149BDF), to(#0480BE));
+  background-image: -webkit-linear-gradient(top, #149BDF, #0480BE);
+  background-image: -o-linear-gradient(top, #149BDF, #0480BE);
+  background-image: linear-gradient(to bottom, #149BDF, #0480BE);
+  background-repeat: repeat-x;
+  box-shadow: inset 0px 0px 2px rgba(255, 255, 255, .5);
+}
+
+#player #time {
+  text-shadow: 1px 1px 1px rgba(255, 255, 255, .4);
+}
+#player .progress {
+  background: transparent;
+  box-shadow: inset 0px 0px 4px rgba(0, 0, 0, .6), 0px 1px 1px rgba(255, 255, 255, .2);
+}
+#player .progress .bar {
+  box-shadow: inset 0px 0px 2px rgba(255, 255, 255, .5);
+}
+#player #timeslide, #player #volumeslide {
+  background: transparent;
+  border: none;
+  box-shadow: inset 0px 0px 4px rgba(0, 0, 0, .6), 0px 1px 1px rgba(255, 255, 255, .2);
+  cursor: pointer;
+}
+#player .ui-slider-handle .ui-state-focus, #player .ui-slider-handle .ui-state-hover {
+  border: 1px solid lightGrey;
+}
