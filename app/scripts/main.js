@@ -1,25 +1,28 @@
 require.config({
-    "paths": {
-      "jquery": "../components/jquery/jquery",
-      "bootstrap": "vendor/bootstrap",
-      "modernizr": "../components/modernizr",
-      "lodash": "../components/lodash/lodash",
-      "backbone": "../components/backbone/backbone",
-      "backbone.marionette": "../components/backbone.marionette/lib/backbone.marionette"
+    'paths': {
+        'text': '../components/requirejs-text/text',
+        'jquery': '../components/jquery/jquery',
+        'modernizr': '../components/modernizr',
+        'underscore': '../components/lodash/lodash',
+        'backbone': '../components/backbone-amd/backbone',
+        //Plugins
+        'backbone.forms': '../components/backbone-forms/distribution/backbone-forms.amd.min',
+        'backbone.shortcuts': '../components/backbone-shortcuts/backbone.shortcuts',
+        'backbone.validation': '../components/backbone-validation/dist/backbone-validation-amd-min',
+        'backbone.collectionview': '../components/backbone.collectionview/backbone.collectionview.min'
     },
-    "shim": {
-      backbone: {
-        deps: ["lodash", "jquery"],
-        exports: "Backbone"
-      },
-      "backbone.marionette": {
-        deps: ["backbone"],
-        exports: "Marionette"
-      }
+    'shim': {
+        backbone: {
+            deps: ['underscore', 'jquery'],
+            exports: 'Backbone'
+        },
+        'backbone.collectionview': {
+            deps: ['backbone']
+        }
     }
 });
 
-require(['app'], function (app) {
+require(['app', 'backbone'], function (App) {
     'use strict';
-    app.start();
+    new App();
 });

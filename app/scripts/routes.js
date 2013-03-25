@@ -1,14 +1,16 @@
+/*
 define([
-  "backbone",
-  ],
-  function(Backbone){
+    'backbone',
+],
+function (Backbone) {
+    'use strict';
     return Backbone.Router.extend({
-      routes: {
-        "": "index"
-      },
-      index: function(){
-        
-      }
+        routes: {
+            '': 'index'
+        },
+        index: function () {
+          
+        }
     });
-  }
-);
+});
+*/
